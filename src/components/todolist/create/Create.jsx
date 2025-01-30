@@ -8,7 +8,7 @@ const initialState = {
   lname: "",
   profession: "",
   birthdate: "",
-  gender: "male", // default qiymat
+  gender: "male",
   bio: "",
 };
 
@@ -85,7 +85,7 @@ const Create = () => {
             value={user.bio}
             onChange={(event) => setUser({ ...user, bio: event.target.value })}
             className="border p-2 rounded"
-            placeholder="Short Bio"
+            placeholder="Bio"
             rows="3"
           />
           <button type="submit" className="bg-blue-500 text-white p-2 rounded hover:bg-blue-600">
